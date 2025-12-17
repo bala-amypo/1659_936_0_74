@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  
 
 import org.springframwork.stereotype.Service;
-import com.example.demo.repository.Studentrepo
+import com.example.demo.repository.Studentrepo;
 import com.example.demo.entity.Studententity;
 import com.example.demo.service.Studentservice;
 
@@ -16,6 +16,7 @@ public class StudentservieImpl implements Studentservice{   //splited as 2 layer
             //save()-insert,update
             //findall(),findById(),deleteById(),existById()
 
+            @Override
             public  Studententity postData(Studententity stu){
                return student.save(stu)
             }
