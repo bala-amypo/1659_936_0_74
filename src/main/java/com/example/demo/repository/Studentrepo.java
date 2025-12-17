@@ -9,7 +9,7 @@ import com.example.demo.entity.Studententity;
 
 
 @Repository
-public interface Studentrepo extends JpaRepository<Studententity,Integer>{
+public interface Studentrepo extends JpaRepository<Studententity,Integer>{      //parent extends child
      //use in service layer,
          
 } 
