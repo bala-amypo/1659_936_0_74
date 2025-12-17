@@ -44,6 +44,12 @@ public class Studententity{
       public Studententity(Integer id,String name,String email,String password,Date created){
         this.id=id;
         this.name=name;
+        this.email=email;
+        this.password=password;
+        this.created=created;
+      }
+      public Studententity(){
+        
       }
      
         
