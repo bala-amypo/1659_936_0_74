@@ -13,9 +13,10 @@ import com.example.demo.service.Studentservice;
 public class StudentservieImpl implements Studentservice{   //splited as 2 layers here
 
             @Autowired Studentrepo student; 
-            //save()
+            //save()-insert,update
             //findall(),findById(),deleteById(),existById()
+
             public  Studententity postData(Studententity stu){
-               
+               return student.save(stu)
             }
 }
