@@ -18,6 +18,6 @@ public class StudentservieImpl implements Studentservice{   //splited as 2 layer
 
             @Override
             public  Studententity postData(Studententity stu){
-               return student.save(stu)
+               return student.save(stu);
             }
 }
