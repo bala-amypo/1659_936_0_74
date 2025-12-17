@@ -10,6 +10,6 @@ import com.example.demo.entity.Studententity;
 
 @Repository
 public interface Studentrepo extends JpaRepository<Studententity,Integer>{
-     
+     //use in service layer,
          
 } 
