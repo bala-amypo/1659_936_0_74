@@ -8,12 +8,12 @@ public class Studententity{
        private String name;
        private  String email;
        private String password;
-       private Date creatAt;
+       private Date created;
 
       public void setId(int id){
         this.id=id;
       }
-      public int getId(){
+      public Integer getId(){
         return id;
       }
        public String getName(){
@@ -34,11 +34,16 @@ public class Studententity{
        public void setPassword(String password){
         this.password=password;
       }
-      public Date getCreateAt(){
-        return createAt;
+      public Date getCreated(){
+        return created;
       }
-       public void setCreateAt(Date createAt){
-        this.createAt=CreateAt;
+       public void setCreated(Date created){
+        this.created=created;
+      }
+
+      public Studententity(Integer id,String name,String email,String password,Date created){
+        this.id=id;
+        this.name=name;
       }
      
         
