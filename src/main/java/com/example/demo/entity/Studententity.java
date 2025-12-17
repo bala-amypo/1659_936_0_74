@@ -1,9 +1,15 @@
 package com.example.demo.entity
 
 import java.util.Date;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+
 
 @Entity
 public class Studententity{
+      @Id
+      @GeneratedValue(Statergy)
        private Integer id;
        private String name;
        private  String email;
@@ -49,7 +55,7 @@ public class Studententity{
         this.created=created;
       }
       public Studententity(){
-        
+
       }
      
         
