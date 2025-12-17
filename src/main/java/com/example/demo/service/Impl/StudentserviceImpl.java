@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 
 import org.springframwork.stereotype.Service;
-
+import com.example.demo.repository.Studentrepo
 import com.example.demo.entity.Studententity;
 import com.example.demo.service.Studentservice;
 

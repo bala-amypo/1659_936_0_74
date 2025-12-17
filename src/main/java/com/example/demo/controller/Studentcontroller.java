@@ -1,1 +1,7 @@
-package com.example.dem
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.
+@RestController
+public class Studentcontroller{
+         
+}
