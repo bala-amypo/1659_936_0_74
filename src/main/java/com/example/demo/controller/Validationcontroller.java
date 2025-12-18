@@ -32,11 +32,11 @@ public class Validationcontroller{
           return ser.delete(id);
 }
        @GetMapping("/find/{id}")
-       public   Studententity getDataval(@PathVariable int id){
+       public   Validationentity getDataval(@PathVariable int id){
         return ser.getData(id);
        }
        @PutMapping("/put/{id}")
-       public Studententity updateval(@PathVariable int id,@RequestBody Studententity entity){
+       public Validationentity updateval(@PathVariable int id,@RequestBody Studententity entity){
         return ser.updatedata(id,entity);
        }
 }
