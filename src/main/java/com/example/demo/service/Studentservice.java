@@ -7,5 +7,7 @@ public interface  Studentservice{
        
        Studententity postData(Studententity stu); // method declaration and stu is the users giving detail
 
-       List<Studententity>getAllData();                 //method declaration
+       List<Studententity>getAllData();                 //method declaration for rereiving all the data
+
+       
 }
