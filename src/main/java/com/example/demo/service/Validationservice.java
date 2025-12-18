@@ -7,6 +7,7 @@ import com.example.demo.entity.Validationentity;
 public interface  Validationservice{
        
        Validationentity validData(Validationentity valid); // method declaration and stu is the users giving detail
-
+       
+        Validationentity getData(long id);
  
 }
