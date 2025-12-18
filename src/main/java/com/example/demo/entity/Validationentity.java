@@ -4,11 +4,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakrta.validation.constraints.NotNull;
-import jakrta.validation.constraints.Size;
-import jakrta.validation.constraints.Email;
-import jakrta.validation.constraints.Max;
-import jakrta.validation.constraints.Positive;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Positive;
 
 
 
