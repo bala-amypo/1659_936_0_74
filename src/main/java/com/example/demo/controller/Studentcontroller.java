@@ -30,5 +30,8 @@ public class Studentcontroller{
         public String deletedata(@PathVariable int id){
           return ser.delete(id);
 }
-       @GetMapping
+       @GetMapping("/find/{id}")
+       public   Studententity getDataval(@PathVariable int id){
+        return ser.getData(id);
+       }
 }
