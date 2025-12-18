@@ -33,5 +33,7 @@ public class StudentserviceImpl implements Studentservice{   //splited as 2 laye
                  return "Deleted Successfully";
              }
             @Override
-            public   Studententity getData(int id);
+            public  Studententity getData(int id){
+               return student.findById(id);
+            }
 }
