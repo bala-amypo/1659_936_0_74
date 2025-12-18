@@ -34,6 +34,6 @@ public class StudentserviceImpl implements Studentservice{   //splited as 2 laye
              }
             @Override
             public  Studententity getData(int id){
-               return student.findById(id);
+               return student.findById(id).orElse(null);
             }
 }
