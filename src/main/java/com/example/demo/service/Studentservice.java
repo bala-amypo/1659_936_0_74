@@ -10,6 +10,6 @@ public interface  Studentservice{
 
        List<Studententity>getAllData();                 //method declaration for rereiving all the data
        
-       String Delete(int id);
+       String delete(int id);
 
 }

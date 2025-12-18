@@ -26,5 +26,7 @@ public class Studentcontroller{
         }
 
         @DeleteMapping("/del")
-        public String delete
+        public String deletedata(){
+          return ser.delete();
+}
 }
