@@ -33,7 +33,12 @@ public class StudentserviceImpl implements Studentservice{   //splited as 2 laye
                  return "Deleted Successfully";
              }
             @Override
-            public  Studententity getData(int id){
+            public  Studententity getData(int id){          //return type:Studententity ,gives error -> so add orElse(null)
                return student.findById(id).orElse(null);
             }
+            @Override
+            public  Studententity updatedata(int id,Studententity entity){
+               return
+            }
+
 }
