@@ -38,7 +38,7 @@ public class StudentserviceImpl implements Studentservice{   //splited as 2 laye
             }
             @Override
             public  Studententity updatedata(int id,Studententity entity){
-               if(student.existsById){
+               if(student.existsById(id)){
                   entity.setId(id);
                   return student.save(entity);
                }
