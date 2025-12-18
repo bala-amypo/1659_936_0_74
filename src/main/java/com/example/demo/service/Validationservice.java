@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
 import com.example.demo.entity.Validationentity;
-import java.util.List;
+// import java.util.List;
 // import java.util.Map;
 
 public interface  Validationservice{
