@@ -23,26 +23,26 @@ public class ValidationserviceImpl implements Validationservice{   //splited as 
                return student.save(stu);
             }
 
-            @Override
-            public   List<Validationentity>getAllData(){
-               return student.findAll();
-            }
-            @Override
-             public String delete(int id){
-                 student.deleteById(id);  // if add return ,it will give error
-                 return "Deleted Successfully";
-             }
-            @Override
-            public  Studententity getData(int id){          //return type:Studententity ,gives error -> so add orElse(null)
-               return student.findById(id).orElse(null);
-            }
-            @Override
-            public  Studententity updatedata(int id,Studententity entity){
-               if(student.existsById(id)){
-                  entity.setId(id);
-                  return student.save(entity);
-               }
-               return null;
-            }
+            // @Override
+            // public   List<Validationentity>getAllData(){
+            //    return student.findAll();
+            // }
+            // @Override
+            //  public String delete(int id){
+            //      student.deleteById(id);  // if add return ,it will give error
+            //      return "Deleted Successfully";
+            //  }
+            // @Override
+            // public  Studententity getData(int id){          //return type:Studententity ,gives error -> so add orElse(null)
+            //    return student.findById(id).orElse(null);
+            // }
+            // @Override
+            // public  Studententity updatedata(int id,Studententity entity){
+            //    if(student.existsById(id)){
+            //       entity.setId(id);
+            //       return student.save(entity);
+            //    }
+            //    return null;
+            // }
 
 }

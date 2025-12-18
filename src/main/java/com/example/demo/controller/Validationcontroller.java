@@ -22,21 +22,21 @@ public class Validationcontroller{
          public Validationentity sendData(@RequestBody Validationentity stu){
             return ser.postData(stu);
          }
-         @GetMapping("/get")
-         public List<Validationentity> getval(){
-            return ser.getAllData();
-        }
+//          @GetMapping("/get")
+//          public List<Validationentity> getval(){
+//             return ser.getAllData();
+//         }
 
-        @DeleteMapping("/del/{id}")
-        public String deletedata(@PathVariable int id){
-          return ser.delete(id);
-}
-       @GetMapping("/find/{id}")
-       public   Validationentity getDataval(@PathVariable int id){
-        return ser.getData(id);
-       }
-       @PutMapping("/put/{id}")
-       public Validationentity updateval(@PathVariable int id,@RequestBody Studententity entity){
-        return ser.updatedata(id,entity);
-       }
+//         @DeleteMapping("/del/{id}")
+//         public String deletedata(@PathVariable int id){
+//           return ser.delete(id);
+// }
+//        @GetMapping("/find/{id}")
+//        public   Validationentity getDataval(@PathVariable int id){
+//         return ser.getData(id);
+//        }
+//        @PutMapping("/put/{id}")
+//        public Validationentity updateval(@PathVariable int id,@RequestBody Studententity entity){
+//         return ser.updatedata(id,entity);
+//        }
 }
