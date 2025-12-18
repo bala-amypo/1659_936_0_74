@@ -14,13 +14,13 @@ import com.example.demo.service.Validationservice;
 @Service  
 public class ValidationserviceImpl implements Validationservice{   //splited as 2 layers here
 
-            @Autowired Validationrepo student; 
+            @Autowired Validationrepo validrepo; 
             //save()-insert,update
             //findall(),findById(),deleteById(),existById()
 
             @Override
-            public  Validationentity postData(Validationentity stu){
-               return student.save(stu);
+            public  Validationentity validData(Validationentity valid){
+               return validrepo.save(valid);
             }
 
            
