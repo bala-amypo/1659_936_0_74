@@ -32,5 +32,6 @@ public class StudentserviceImpl implements Studentservice{   //splited as 2 laye
                  student.deleteById(id);  // if add return ,it will give error
                  return "Deleted Successfully";
              }
-            
+            @Override
+            public   Studententity getData(int id);
 }

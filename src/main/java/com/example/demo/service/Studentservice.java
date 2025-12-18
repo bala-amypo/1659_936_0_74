@@ -12,6 +12,6 @@ public interface  Studentservice{
        
        String delete(int id);
 
-       
+       Studententity getData(int id);
 
 }
