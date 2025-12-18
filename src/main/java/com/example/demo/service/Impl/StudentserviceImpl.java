@@ -26,4 +26,8 @@ public class StudentserviceImpl implements Studentservice{   //splited as 2 laye
             public   List<Studententity>getAllData(){
                return student.findAll();
             }
+             public String Delete(int id){
+               return student.remove();
+             }
+            
 }

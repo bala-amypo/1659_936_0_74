@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.entity.Studententity;
 import java.util.List;
+// import java.util.Map;
 
 public interface  Studentservice{
        
@@ -9,5 +10,6 @@ public interface  Studentservice{
 
        List<Studententity>getAllData();                 //method declaration for rereiving all the data
        
+       String Delete(int id);
 
 }
