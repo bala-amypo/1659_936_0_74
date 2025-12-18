@@ -20,5 +20,7 @@ public class Validationcontroller{
          public Validationentity Data(@Valid @RequestBody Validationentity valid){
             return service.validData(valid);
          }
-        
+          @GetMapping("/findV/{id}")
+       public   Validationentity getDataval(@PathVariable long id){
+        return service.getData(id);
 }
