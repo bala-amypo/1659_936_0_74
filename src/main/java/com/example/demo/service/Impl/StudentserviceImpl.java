@@ -1,7 +1,7 @@
 package com.example.demo.service.Impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.factory
+// import org.springframework.web.bind.annotation.PathVariable;
  
 
 import org.springframework.stereotype.Service;
@@ -28,7 +28,7 @@ public class StudentserviceImpl implements Studentservice{   //splited as 2 laye
                return student.findAll();
             }
             @Override
-             public String delete(@PathVariable int id){
+             public String delete(int id){
                  student.deleteById(id);  // if add return ,it will give error
                  return "Deleted Successfully";
              }
