@@ -28,7 +28,7 @@ public class Validationentity{
         private String password;
         @Max(30)
         @Positive(message="Age  must be positive")
-        private Integer age;
+        private int age;
          
 
 
@@ -71,7 +71,7 @@ public class Validationentity{
         @Size(min= 2,max = 10, message="must be 2 to 10 character")
         @NotNull(message=" Password is mandatory") String password,
         @Max(30)
-        @Positive(message="Age  must be positive") Integer age){
+        @Positive(message="Age  must be positive") int age){
             this.id=id;
             this.name=name;
             this.email=email;

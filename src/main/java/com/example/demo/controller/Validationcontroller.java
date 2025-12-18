@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
-
+import jakarta.validation.Valid;
 import com.example.demo.entity.Validationentity;
 import com.example.demo.service.Validationservice;
 
@@ -19,7 +19,7 @@ public class Validationcontroller{
 
 
          @PostMapping("/post")
-         public Validationentity sendData(@RequestBody Validationentity stu){
+         public Validationentity sendData(@Valid @RequestBody Validationentity stu){
             return ser.postData(stu);
          }
         
