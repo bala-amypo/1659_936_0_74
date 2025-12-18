@@ -13,12 +13,12 @@ import com.example.demo.service.Validationservice;
 
 @RestController
 public class Validationcontroller{
-         @Autowired  Validationservice ser;  //used to call methods and attributes from other files
+         @Autowired  Validationservice service;  //used to call methods and attributes from other files
 
 
-         @PostMapping("/post")
-         public Validationentity Data(@Valid @RequestBody Validationentity stu){
-            return ser.postData(stu);
+         @PostMapping("/postV")
+         public Validationentity Data(@Valid @RequestBody Validationentity valid){
+            return service.validData(valid);
          }
         
 }

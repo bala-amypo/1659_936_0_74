@@ -6,7 +6,7 @@ import com.example.demo.entity.Validationentity;
 
 public interface  Validationservice{
        
-       Validationentity postData(Validationentity stu); // method declaration and stu is the users giving detail
+       Validationentity Data(Validationentity stu); // method declaration and stu is the users giving detail
 
  
 }
