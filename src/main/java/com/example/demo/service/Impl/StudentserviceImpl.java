@@ -42,6 +42,7 @@ public class StudentserviceImpl implements Studentservice{   //splited as 2 laye
                   entity.setId(id);
                   return student.save(entity);
                }
+               return null;
             }
 
 }
