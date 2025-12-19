@@ -14,7 +14,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Studentdetails{
-    
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
      private Integer card_no;
     
