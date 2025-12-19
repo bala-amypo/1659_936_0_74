@@ -13,6 +13,7 @@ import jakarta.validation.constraints.Positive;
 
 
 @Entity
+@Data
 public class Validationentity{
 
         @Id
