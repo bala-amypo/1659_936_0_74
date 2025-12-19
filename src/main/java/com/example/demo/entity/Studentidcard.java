@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Studentdetails{
+public class Studentidcard{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
