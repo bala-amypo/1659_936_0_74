@@ -5,6 +5,7 @@ public class Studentdetails{
      private Integer card_no;
     
     @OneToOne
+    @JoinColumn(name = "student_id")
     private Studentetable student;
 
 }
