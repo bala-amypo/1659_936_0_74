@@ -25,6 +25,6 @@ public class ValidationserviceImpl implements Validationservice{   //splited as 
 
              @Override
             public  Validationentity getData(long id){          //return type:Studententity ,gives error -> so add orElse(null)
-               return validrepo.findById(id).orElse(null);
+               return validrepo.findById(id).orElseThrow();
             }
 }
