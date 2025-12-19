@@ -1,8 +1,15 @@
 package com.example.demo.entity;
 
+import java.time.LocalDateTime;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Timestamp{
     private Long id;
     private String name;
     private String email;
-    private LocalDateT
+    private LocalDateTime createAt;
+    private LocalDateTime updateAt;
 }
