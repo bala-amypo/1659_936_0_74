@@ -2,8 +2,9 @@ package com.example.demo.entity;
 
 public class Studentdetails{
     private Integer id;
-     private String name;
-     private String email;
-     private String address;
+     private Integer card_no;
+    
+    @OneToOne
+    private Studentetable student;
 
 }
