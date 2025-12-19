@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Studentetable{
+public class Studentdetable{
      @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
