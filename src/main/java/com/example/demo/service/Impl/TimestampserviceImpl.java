@@ -10,9 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.demo.repository.Timestamprepo;
 import com.example.demo.entity.Timestamp;
-import com.example.demo.service.service;
-import com.example.demo.exception.Validationexception;
-// import java.util.List;
+import com.example.demo.service.Timestampservice;
+// import com.example.demo.exception.Validationexception;
+// import javl.List;
 
 
 @Service  
