@@ -23,7 +23,10 @@ public class Timestamp{
     private LocalDateTime updateAt;
     @Prepersist
     public void Oncreate(){
-        LocalDateTime now=new LocalDateTime();
-        
+        LocalDateTime now= LocalDateTime().now();
+
+        this.createAt=now;
+        this.updateAt=now;
     }
+    @PreUpdata
 }
