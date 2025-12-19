@@ -21,6 +21,6 @@ public class Studentdetails{
     
     @OneToOne
     @JoinColumn(name = "student_id")
-    private Studentetable student;
+    private Studentdetable student;
 
 }
