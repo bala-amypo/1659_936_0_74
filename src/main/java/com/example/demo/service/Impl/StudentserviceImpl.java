@@ -1,15 +1,11 @@
 package com.example.demo.service.Impl;
-
 import org.springframework.beans.factory.annotation.Autowired;
 // import org.springframework.web.bind.annotation.PathVariable;
- 
-
 import org.springframework.stereotype.Service;
 import com.example.demo.repository.Studentrepo;
 import com.example.demo.entity.Studententity;
 import com.example.demo.service.Studentservice;
 import java.util.List;
-
 
 @Service  
 public class StudentserviceImpl implements Studentservice{   //splited as 2 layers here
