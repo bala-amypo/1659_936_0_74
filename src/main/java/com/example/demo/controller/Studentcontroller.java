@@ -8,16 +8,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
-
 import com.example.demo.entity.Studententity;
 import com.example.demo.service.Studentservice;
-
-
 @RestController
 public class Studentcontroller{
          @Autowired  Studentservice ser;  //used to call methods and attributes from other files
-
-
          @PostMapping("/post")
          public Studententity sendData(@RequestBody Studententity stu){
             return ser.postData(stu);
